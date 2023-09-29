@@ -1,8 +1,8 @@
 const otpGenerator = require('otp-generator')
 const twilio = require("twilio")
 const OTP = require('../model/dbSchema')
-const accountSid = "AC194fcb9f53f4dd5ecfee06c676b1dac2";
-const authToken = "ad356855f47fd98686383510b9ae340c";
+const accountSid = "TOKEN of your Twilio";// Paste Twilio acount token paster here
+const authToken = "Auth_Token of your twilio ID";//Paste Auth_Token of your twilio ID
 const client = new twilio(process.env.accountSid, process.env.authToken);
 
 async function handleGenerateOTP(req,res){
