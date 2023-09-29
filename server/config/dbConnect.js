@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 async function connectTOMongoDB() {
     try{
-        await mongoose.connect('mongodb+srv://devansh00990:ziyCsBhkttzMk218@cluster0.pi1ay4p.mongodb.net/?retryWrites=true&w=majority');
+        await mongoose.connect('URI');//Paste your URL of Mongo DB connection.
         console.log('Mongo Connected Successfully!!!!');
     }
     catch(err){
